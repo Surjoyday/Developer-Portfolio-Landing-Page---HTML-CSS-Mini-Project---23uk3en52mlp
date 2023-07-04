@@ -1,1 +1,119 @@
+/* || UTILITIES  */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
 
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* || HERO SECTION */
+
+.hero {
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: whitesmoke;
+  background-image: url(https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2832&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* || BLACK BOX SECTION */
+
+.black-box {
+  background-color: #000;
+  font-size: 80px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}
+
+.black-box span {
+  font-size: 96px;
+}
+
+/* || CARD SECTION */
+
+.card img {
+  width: 100%;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.card {
+  max-width: 340px;
+  height: 400px;
+  box-shadow: 1px 1px 5px gainsboro;
+  border-radius: 12px;
+  /* padding: 1em; */
+  margin: 2em 0em;
+}
+
+.card-content {
+  display: grid;
+  grid-template-columns: autofit minmax(340px, 1fr);
+  margin: 1.2em;
+  gap: 0.9em;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* || BOTTOM SECTION */
+
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4rem;
+  margin: 0 1.5rem;
+}
+
+.contact-me {
+  width: 100%;
+  aspect-ratio: 3/1;
+  background-color: rgba(0, 128, 0, 0.563);
+  padding: 2rem;
+}
+
+.about-me {
+  width: 100%;
+  aspect-ratio: 3/1;
+  background-color: rgba(255, 0, 0, 0.504);
+  padding: 2rem;
+}
+
+.bottom h2 {
+  margin: 1.3rem 0;
+}
+
+/* || RESPONSIVENESS */
+
+@media screen and (max-width: 786px) {
+  .hero {
+    min-height: 50vh;
+  }
+
+  .black-box {
+    font-size: 24px;
+  }
+
+  .bottom {
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+  }
+
+  .grid-item {
+    flex-wrap: wrap;
+  }
+}
