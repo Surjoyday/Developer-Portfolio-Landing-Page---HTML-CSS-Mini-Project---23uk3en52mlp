@@ -2,7 +2,7 @@
 
 # Developer Portfolio Landing Page - HTML CSS Mini Project
 
-# Project Objective
+## Project Objective
 
  * Building a developer portfolio landing page application using HTML CSS.
 
